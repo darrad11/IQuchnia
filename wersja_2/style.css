@@ -1,0 +1,46 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#recipes-container {
+    margin-top: 30px;
+}
+
+.recipe-card {
+    margin-bottom: 30px;
+}
+
+.recipe-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+#search-input {
+    width: 300px;
+}
+
+/* Styl dla ikony wyszukiwania */
+button i.bi-search {
+    font-size: 1.2rem;
+}
+
+/* Styl dla ikony profilu */
+a i.bi-person-circle {
+    font-size: 1.5rem; /* Możesz zmienić wielkość ikony */
+    color: #007bff; /* Kolor niebieski dla ikony */
+}
+
+a i.bi-person-circle:hover {
+    color: #0056b3; /* Zmiana koloru ikony po najechaniu */
+}
+
+
+/* Styling for filters */
+form#filter-form .col {
+    margin-bottom: 10px;
+}
+
+form#filter-form select {
+    width: 100%;
+}
