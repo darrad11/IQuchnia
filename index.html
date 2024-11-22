@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQuchnia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>IQuchnia</h1>
+        <nav>
+            <a href="profile.html">Profil</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Wyszukaj przepis</h2>
+        <form id="filters-form">
+            <label for="cuisine">Kuchnia:</label>
+            <select id="cuisine" name="cuisine">
+                <option value="">Wybierz kuchnię</option>
+                <option value="amerykańska">Amerykańska</option>
+                <option value="azjatycka">Azjatycka</option>
+                <option value="francuska">Francuska</option>
+                <option value="polska">Polska</option>
+            </select>
+
+            <label for="diet">Dieta:</label>
+            <select id="diet" name="diet">
+                <option value="">Wybierz dietę</option>
+                <option value="bezglutenowa">Bezglutenowa</option>
+                <option value="wegetariańska">Wegetariańska</option>
+                <option value="wegańska">Wegańska</option>
+            </select>
+
+            <label for="difficulty">Trudność:</label>
+            <select id="difficulty" name="difficulty">
+                <option value="">Wybierz trudność</option>
+                <option value="początkujący">Początkujący</option>
+                <option value="zaawansowany">Zaawansowany</option>
+                <option value="masterchef">Masterchef</option>
+            </select>
+
+            <label for="people">Ilość osób:</label>
+            <select id="people" name="people">
+                <option value="">Wybierz ilość osób</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="więcej">Więcej</option>
+            </select>
+
+            <button type="submit">Szukaj</button>
+        </form>
+
+        <div id="recipes-list">
+            <!-- Przepisy będą wyświetlane tutaj -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
