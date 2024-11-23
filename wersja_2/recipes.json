@@ -47,7 +47,7 @@
         "difficulty": "beginner",
         "people": "1",
         "description": "A simple grilled cheese sandwich with melted cheddar cheese.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Grilledcheesesandwich.png"
     },
     {
         "id": "6",
@@ -57,7 +57,7 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "A fresh quinoa salad with cucumbers, tomatoes, and lemon dressing.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Quinoasalad.jpg"
     },
     {
         "id": "7",
@@ -67,7 +67,7 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "Crispy romaine lettuce, grilled chicken, and Caesar dressing.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Chickencaesarsalad.jpg"
     },
     {
         "id": "8",
@@ -77,7 +77,7 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "A colorful stir fry with bell peppers, broccoli, and soy sauce.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Vegetablestirfry.jpg"
     },
     {
         "id": "9",
