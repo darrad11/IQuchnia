@@ -447,7 +447,7 @@
         "difficulty": "masterchef",
         "people": "6",
         "description": "A traditional Spanish dish with rice, saffron, seafood, and chicken.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Paella.jpg"
     },
     {
         "id": "46",
@@ -457,7 +457,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "Crunchy tostadas topped with seasoned ground beef, lettuce, and cheese.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Beeftostadas.jpg"
     },
     {
         "id": "47",
@@ -467,7 +467,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "Bell peppers stuffed with a mixture of rice, ground beef, and tomatoes.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Stuffedbellpeppers.jpg"
     },
     {
         "id": "48",
@@ -477,7 +477,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "Chicken in a spiced tomato-based curry sauce.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Chickentikkamasala.jpg"
     },
     {
         "id": "49",
@@ -487,7 +487,7 @@
         "difficulty": "advanced",
         "people": "2",
         "description": "Japanese noodle soup with broth, noodles, and toppings like eggs and pork.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Ramen.jpg"
     },
     {
         "id": "50",
@@ -497,6 +497,6 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "A wrap with crispy falafel, veggies, and tahini sauce.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Falafelwrap.jpg"
     }
 ]
