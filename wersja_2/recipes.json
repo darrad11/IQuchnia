@@ -7,7 +7,7 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "Classic spaghetti bolognese with ground beef and tomato sauce.",
-		"image": "./images/Spaghettibolognese.jpg"
+		"image": "./images/Spaghettibolognese.webp"
 	},
     {
         "id": "2",
@@ -17,7 +17,7 @@
         "difficulty": "advanced",
         "people": "4",
         "description": "Traditional sushi with vegetables and rice.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Vegetariansushi.webp"
     },
     {
         "id": "3",
@@ -27,7 +27,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "Spicy chicken curry with a rich coconut milk sauce.",
-		"image": "./images/Chickencurry.jpg"
+		"image": "./images/Chickencurry.webp"
     },
     {
         "id": "4",
@@ -37,7 +37,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "Beef tacos with lettuce, cheese, and salsa in soft tortillas.",
-		"image": "./images/Beeftacos.jpg"
+		"image": "./images/Beeftacos.webp"
     },
     {
         "id": "5",
@@ -47,7 +47,7 @@
         "difficulty": "beginner",
         "people": "1",
         "description": "A simple grilled cheese sandwich with melted cheddar cheese.",
-		"image": "./images/Grilledcheesesandwich.jpg"
+		"image": "./images/Grilledcheesesandwich.webp"
     },
     {
         "id": "6",
@@ -57,7 +57,7 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "A fresh quinoa salad with cucumbers, tomatoes, and lemon dressing.",
-		"image": "./images/Quinoasalad.jpg"
+		"image": "./images/Quinoasalad.webp"
     },
     {
         "id": "7",
@@ -67,7 +67,7 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "Crispy romaine lettuce, grilled chicken, and Caesar dressing.",
-		"image": "./images/Chickencaesarsalad.jpg"
+		"image": "./images/Chickencaesarsalad.webp"
     },
     {
         "id": "8",
@@ -77,7 +77,7 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "A colorful stir fry with bell peppers, broccoli, and soy sauce.",
-		"image": "./images/Vegetablestirfry.jpg"
+		"image": "./images/Vegetablestirfry.webp"
     },
     {
         "id": "9",
@@ -87,7 +87,7 @@
         "difficulty": "advanced",
         "people": "4",
         "description": "Layered pasta with meat sauce, ricotta, mozzarella, and Parmesan cheese.",
-		"image": "./images/Lasagna.jpg"
+		"image": "./images/Lasagna.webp"
     },
     {
         "id": "10",
@@ -97,7 +97,7 @@
         "difficulty": "intermediate",
         "people": "2",
         "description": "Classic pizza topped with tomato sauce, mozzarella, and basil.",
-		"image": "./images/Margaritapizza.jpg"
+		"image": "./images/Margaritapizza.webp"
     },
     {
         "id": "11",
@@ -107,7 +107,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "Breaded and fried eggplant slices with marinara sauce and melted cheese.",
-		"image": "./images/Eggplantparmesan.jpg"
+		"image": "./images/Eggplantparmesan.webp"
     },
     {
         "id": "12",
@@ -117,7 +117,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "Crispy chickpea fritters served with tahini sauce.",
-		"image": "./images/Falafel.jpg"
+		"image": "./images/Falafel.webp"
     },
     {
         "id": "13",
@@ -127,7 +127,7 @@
         "difficulty": "intermediate",
         "people": "2",
         "description": "Poached eggs in a spicy tomato and pepper sauce.",
-		"image": "./images/Shakshuka.jpg"
+		"image": "./images/Shakshuka.webp"
     },
     {
         "id": "14",
@@ -137,7 +137,7 @@
         "difficulty": "intermediate",
         "people": "2",
         "description": "Creamy Alfredo sauce with grilled chicken and fettuccine pasta.",
-		"image": "./images/Chickenalfredo.jpg"
+		"image": "./images/Chickenalfredo.webp"
     },
     {
         "id": "15",
@@ -147,7 +147,7 @@
         "difficulty": "masterchef",
         "people": "4",
         "description": "A luxurious dish with beef fillet, mushrooms, and puff pastry.",
-		"image": "./images/Beefwellington.jpg"
+		"image": "./images/Beefwellington.webp"
     },
     {
         "id": "16",
@@ -157,7 +157,7 @@
         "difficulty": "advanced",
         "people": "4",
         "description": "Layered eggplant with ground lamb, tomato sauce, and béchamel.",
-		"image": "./images/Moussaka.jpg"
+		"image": "./images/Moussaka.webp"
     },
     {
         "id": "17",
@@ -167,7 +167,7 @@
         "difficulty": "intermediate",
         "people": "2",
         "description": "Stir-fried rice noodles with shrimp, peanuts, and a tangy tamarind sauce.",
-		"image": "./images/Padthai.jpg"
+		"image": "./images/Padthai.webp"
     },
     {
         "id": "18",
@@ -177,7 +177,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "A hearty soup with a variety of vegetables and herbs.",
-		"image": "./images/Vegetablesoup.jpg"
+		"image": "./images/Vegetablesoup.webp"
     },
     {
         "id": "19",
@@ -187,7 +187,7 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "Grilled fish served in soft tortillas with cabbage slaw and salsa.",
-		"image": "./images/Fishtacos.jpg"
+		"image": "./images/Fishtacos.webp"
     },
     {
         "id": "20",
@@ -197,7 +197,7 @@
         "difficulty": "intermediate",
         "people": "2",
         "description": "Pasta with grilled chicken and a fresh pesto sauce.",
-		"image": "./images/Chickenpestopasta.jpg"
+		"image": "./images/Chickenpestopasta.webp"
     },
     {
         "id": "21",
@@ -207,7 +207,7 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "Fluffy pancakes served with maple syrup and butter.",
-		"image": "./images/Pancakes.jpg"
+		"image": "./images/Pancakes.webp"
     },
     {
         "id": "22",
@@ -217,7 +217,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "Breaded chicken topped with marinara sauce and melted mozzarella.",
-		"image": "./images/Chickenparmesan.jpg"
+		"image": "./images/Chickenparmesan.webp"
     },
     {
         "id": "23",
@@ -227,7 +227,7 @@
         "difficulty": "intermediate",
         "people": "2",
         "description": "Spicy and sour Thai soup with shrimp and lemongrass.",
-		"image": "./images/Tomyumsoup.jpg"
+		"image": "./images/Tomyumsoup.webp"
     },
     {
         "id": "24",
@@ -237,7 +237,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "Stir-fried beef with vegetables and soy sauce.",
-		"image": "./images/Beefstirfry.jpg"
+		"image": "./images/Beefstirfry.webp"
     },
     {
         "id": "25",
@@ -247,7 +247,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "A vegetable medley of zucchini, eggplant, and tomatoes cooked in olive oil.",
-		"image": "./images/Ratatouille.jpg"
+		"image": "./images/Ratatouille.webp"
     },
     {
         "id": "26",
@@ -257,7 +257,7 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "Crispy romaine lettuce, croutons, and Caesar dressing.",
-		"image": "./images/Caesarsalad.jpg"
+		"image": "./images/Caesarsalad.webp"
     },
     {
         "id": "27",
@@ -267,7 +267,7 @@
         "difficulty": "advanced",
         "people": "6",
         "description": "A layered dessert made with coffee-soaked ladyfingers and mascarpone cream.",
-		"image": "./images/Tiramisu.jpg"
+		"image": "./images/Tiramisu.webp"
     },
     {
         "id": "28",
@@ -277,7 +277,7 @@
         "difficulty": "beginner",
         "people": "6",
         "description": "A classic apple pie with a buttery, flaky crust.",
-		"image": "./images/Applepie.jpg"
+		"image": "./images/Applepie.webp"
     },
     {
         "id": "29",
@@ -287,7 +287,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "Baked ziti with marinara sauce, ricotta, and mozzarella cheese.",
-		"image": "./images/Bakedziti.jpg"
+		"image": "./images/Bakedziti.webp"
     },
     {
         "id": "30",
@@ -297,7 +297,7 @@
         "difficulty": "advanced",
         "people": "6",
         "description": "Layered lasagna with ricotta, spinach, and marinara sauce.",
-		"image": "./images/Vegetablelasagna.jpg"
+		"image": "./images/Vegetablelasagna.webp"
     },
     {
         "id": "31",
@@ -307,7 +307,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "A smooth and creamy tomato soup with fresh basil.",
-		"image": "./images/Tomatobasilsoup.jpg"
+		"image": "./images/Tomatobasilsoup.webp"
     },
     {
         "id": "32",
@@ -317,7 +317,7 @@
         "difficulty": "advanced",
         "people": "2",
         "description": "Grilled lamb chops with a garlic and herb marinade.",
-		"image": "./images/Lambchops.jpg"
+		"image": "./images/Lambchops.webp"
     },
     {
         "id": "33",
@@ -327,7 +327,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "A hearty vegetarian chili with beans, tomatoes, and spices.",
-		"image": "./images/Vegetarianchili.jpg"
+		"image": "./images/Vegetarianchili.webp"
     },
     {
         "id": "34",
@@ -337,7 +337,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "A creamy soup made with clams, potatoes, and celery.",
-		"image": "./images/Clamchowder.jpg"
+		"image": "./images/Clamchowder.webp"
     },
     {
         "id": "35",
@@ -347,7 +347,7 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "Creamy Alfredo sauce with fettuccine pasta.",
-		"image": "./images/Fettuccinealfredo.jpg"
+		"image": "./images/Fettuccinealfredo.webp"
     },
     {
         "id": "36",
@@ -357,7 +357,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "Spicy chili with ground beef, beans, and a variety of spices.",
-		"image": "./images/Chiliconcarne.jpg"
+		"image": "./images/Chiliconcarne.webp"
     },
     {
         "id": "37",
@@ -367,7 +367,7 @@
         "difficulty": "advanced",
         "people": "4",
         "description": "Japanese sushi rolls filled with fish, rice, and vegetables.",
-		"image": "./images/Makisushi.jpg"
+		"image": "./images/Makisushi.webp"
     },
     {
         "id": "38",
@@ -377,7 +377,7 @@
         "difficulty": "masterchef",
         "people": "4",
         "description": "Crispy Peking duck served with pancakes and hoisin sauce.",
-		"image": "./images/Pekingduck.jpg"
+		"image": "./images/Pekingduck.webp"
     },
     {
         "id": "39",
@@ -387,7 +387,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "Breaded and fried chicken cutlet, served with lemon wedges.",
-		"image": "./images/Chickenschnitzel.jpg"
+		"image": "./images/Chickenschnitzel.webp"
     },
     {
         "id": "40",
@@ -397,7 +397,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "Beef and broccoli stir-fried in a savory soy-based sauce.",
-		"image": "./images/Beefandbroccolistirfry.jpg"
+		"image": "./images/Beefandbroccolistirfry.webp"
     },
     {
         "id": "41",
@@ -407,7 +407,7 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "A salad with lettuce, bacon, eggs, avocado, and blue cheese.",
-		"image": "./images/Cobbsalad.jpg"
+		"image": "./images/Cobbsalad.webp"
     },
     {
         "id": "42",
@@ -417,7 +417,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "Sausages served with mashed potatoes and gravy.",
-		"image": "./images/Bangersandmash.jpg"
+		"image": "./images/Bangersandmash.webp"
     },
     {
         "id": "43",
@@ -427,7 +427,7 @@
         "difficulty": "intermediate",
         "people": "2",
         "description": "A pizza topped with vegetables like mushrooms, bell peppers, and onions.",
-		"image": "./images/Vegetarianpizza.jpg"
+		"image": "./images/Vegetarianpizza.webp"
     },
     {
         "id": "44",
@@ -437,7 +437,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "Stir-fried chicken with vegetables in a soy sauce-based glaze.",
-		"image": "./images/Chickenstirfry.jpg"
+		"image": "./images/Chickenstirfry.webp"
     },
     {
         "id": "45",
@@ -447,7 +447,7 @@
         "difficulty": "masterchef",
         "people": "6",
         "description": "A traditional Spanish dish with rice, saffron, seafood, and chicken.",
-		"image": "./images/Paella.jpg"
+		"image": "./images/Paella.webp"
     },
     {
         "id": "46",
@@ -457,7 +457,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "Crunchy tostadas topped with seasoned ground beef, lettuce, and cheese.",
-		"image": "./images/Beeftostadas.jpg"
+		"image": "./images/Beeftostadas.webp"
     },
     {
         "id": "47",
@@ -467,7 +467,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "Bell peppers stuffed with a mixture of rice, ground beef, and tomatoes.",
-		"image": "./images/Stuffedbellpeppers.jpg"
+		"image": "./images/Stuffedbellpeppers.webp"
     },
     {
         "id": "48",
@@ -477,7 +477,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "Chicken in a spiced tomato-based curry sauce.",
-		"image": "./images/Chickentikkamasala.jpg"
+		"image": "./images/Chickentikkamasala.webp"
     },
     {
         "id": "49",
@@ -487,7 +487,7 @@
         "difficulty": "advanced",
         "people": "2",
         "description": "Japanese noodle soup with broth, noodles, and toppings like eggs and pork.",
-		"image": "./images/Ramen.jpg"
+		"image": "./images/Ramen.webp"
     },
     {
         "id": "50",
@@ -497,6 +497,6 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "A wrap with crispy falafel, veggies, and tahini sauce.",
-		"image": "./images/Falafelwrap.jpg"
+		"image": "./images/Falafelwrap.webp"
     }
 ]
