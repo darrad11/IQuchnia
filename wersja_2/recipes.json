@@ -307,7 +307,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "A smooth and creamy tomato soup with fresh basil.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Tomatobasilsoup.jpg"
     },
     {
         "id": "32",
@@ -317,7 +317,7 @@
         "difficulty": "advanced",
         "people": "2",
         "description": "Grilled lamb chops with a garlic and herb marinade.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Lambchops.jpg"
     },
     {
         "id": "33",
@@ -327,7 +327,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "A hearty vegetarian chili with beans, tomatoes, and spices.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Vegetarianchili.jpg"
     },
     {
         "id": "34",
@@ -337,7 +337,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "A creamy soup made with clams, potatoes, and celery.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Clamchowder.jpg"
     },
     {
         "id": "35",
@@ -347,7 +347,7 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "Creamy Alfredo sauce with fettuccine pasta.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Fettuccinealfredo.jpg"
     },
     {
         "id": "36",
@@ -357,7 +357,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "Spicy chili with ground beef, beans, and a variety of spices.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Chiliconcarne.jpg"
     },
     {
         "id": "37",
@@ -367,7 +367,7 @@
         "difficulty": "advanced",
         "people": "4",
         "description": "Japanese sushi rolls filled with fish, rice, and vegetables.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Makisushi.jpg"
     },
     {
         "id": "38",
@@ -377,7 +377,7 @@
         "difficulty": "masterchef",
         "people": "4",
         "description": "Crispy Peking duck served with pancakes and hoisin sauce.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Pekingduck.jpg"
     },
     {
         "id": "39",
@@ -387,7 +387,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "Breaded and fried chicken cutlet, served with lemon wedges.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Chickenschnitzel.jpg"
     },
     {
         "id": "40",
@@ -397,7 +397,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "Beef and broccoli stir-fried in a savory soy-based sauce.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Beefandbroccolistirfry.jpg"
     },
     {
         "id": "41",
@@ -407,7 +407,7 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "A salad with lettuce, bacon, eggs, avocado, and blue cheese.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Cobbsalad.jpg"
     },
     {
         "id": "42",
@@ -417,7 +417,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "Sausages served with mashed potatoes and gravy.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Bangersandmash.jpg"
     },
     {
         "id": "43",
@@ -427,7 +427,7 @@
         "difficulty": "intermediate",
         "people": "2",
         "description": "A pizza topped with vegetables like mushrooms, bell peppers, and onions.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Vegetarianpizza.jpg"
     },
     {
         "id": "44",
@@ -437,7 +437,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "Stir-fried chicken with vegetables in a soy sauce-based glaze.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Chickenstirfry.jpg"
     },
     {
         "id": "45",
