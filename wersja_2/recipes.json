@@ -47,7 +47,7 @@
         "difficulty": "beginner",
         "people": "1",
         "description": "A simple grilled cheese sandwich with melted cheddar cheese.",
-		"image": "./images/Grilledcheesesandwich.png"
+		"image": "./images/Grilledcheesesandwich.jpg"
     },
     {
         "id": "6",
@@ -87,7 +87,7 @@
         "difficulty": "advanced",
         "people": "4",
         "description": "Layered pasta with meat sauce, ricotta, mozzarella, and Parmesan cheese.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Lasagna.jpg"
     },
     {
         "id": "10",
@@ -97,7 +97,7 @@
         "difficulty": "intermediate",
         "people": "2",
         "description": "Classic pizza topped with tomato sauce, mozzarella, and basil.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Margaritapizza.jpg"
     },
     {
         "id": "11",
@@ -107,7 +107,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "Breaded and fried eggplant slices with marinara sauce and melted cheese.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Eggplantparmesan.jpg"
     },
     {
         "id": "12",
@@ -117,7 +117,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "Crispy chickpea fritters served with tahini sauce.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Falafel.jpg"
     },
     {
         "id": "13",
@@ -127,7 +127,7 @@
         "difficulty": "intermediate",
         "people": "2",
         "description": "Poached eggs in a spicy tomato and pepper sauce.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Shakshuka.jpg"
     },
     {
         "id": "14",
@@ -137,7 +137,7 @@
         "difficulty": "intermediate",
         "people": "2",
         "description": "Creamy Alfredo sauce with grilled chicken and fettuccine pasta.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Chickenalfredo.jpg"
     },
     {
         "id": "15",
@@ -147,7 +147,7 @@
         "difficulty": "masterchef",
         "people": "4",
         "description": "A luxurious dish with beef fillet, mushrooms, and puff pastry.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Beefwellington.jpg"
     },
     {
         "id": "16",
@@ -157,7 +157,7 @@
         "difficulty": "advanced",
         "people": "4",
         "description": "Layered eggplant with ground lamb, tomato sauce, and béchamel.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Moussaka.jpg"
     },
     {
         "id": "17",
@@ -167,7 +167,7 @@
         "difficulty": "intermediate",
         "people": "2",
         "description": "Stir-fried rice noodles with shrimp, peanuts, and a tangy tamarind sauce.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Padthai.jpg"
     },
     {
         "id": "18",
@@ -177,7 +177,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "A hearty soup with a variety of vegetables and herbs.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Vegetablesoup.jpg"
     },
     {
         "id": "19",
@@ -187,7 +187,7 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "Grilled fish served in soft tortillas with cabbage slaw and salsa.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Fishtacos.jpg"
     },
     {
         "id": "20",
@@ -197,7 +197,7 @@
         "difficulty": "intermediate",
         "people": "2",
         "description": "Pasta with grilled chicken and a fresh pesto sauce.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Chickenpestopasta.jpg"
     },
     {
         "id": "21",
@@ -207,7 +207,7 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "Fluffy pancakes served with maple syrup and butter.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Pancakes.jpg"
     },
     {
         "id": "22",
@@ -217,7 +217,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "Breaded chicken topped with marinara sauce and melted mozzarella.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Chickenparmesan.jpg"
     },
     {
         "id": "23",
@@ -227,7 +227,7 @@
         "difficulty": "intermediate",
         "people": "2",
         "description": "Spicy and sour Thai soup with shrimp and lemongrass.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Tomyumsoup.jpg"
     },
     {
         "id": "24",
@@ -237,7 +237,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "Stir-fried beef with vegetables and soy sauce.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Beefstirfry.jpg"
     },
     {
         "id": "25",
@@ -247,7 +247,7 @@
         "difficulty": "intermediate",
         "people": "4",
         "description": "A vegetable medley of zucchini, eggplant, and tomatoes cooked in olive oil.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Ratatouille.jpg"
     },
     {
         "id": "26",
@@ -257,7 +257,7 @@
         "difficulty": "beginner",
         "people": "2",
         "description": "Crispy romaine lettuce, croutons, and Caesar dressing.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Caesarsalad.jpg"
     },
     {
         "id": "27",
@@ -267,7 +267,7 @@
         "difficulty": "advanced",
         "people": "6",
         "description": "A layered dessert made with coffee-soaked ladyfingers and mascarpone cream.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Tiramisu.jpg"
     },
     {
         "id": "28",
@@ -277,7 +277,7 @@
         "difficulty": "beginner",
         "people": "6",
         "description": "A classic apple pie with a buttery, flaky crust.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Applepie.jpg"
     },
     {
         "id": "29",
@@ -287,7 +287,7 @@
         "difficulty": "beginner",
         "people": "4",
         "description": "Baked ziti with marinara sauce, ricotta, and mozzarella cheese.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Bakedziti.jpg"
     },
     {
         "id": "30",
@@ -297,7 +297,7 @@
         "difficulty": "advanced",
         "people": "6",
         "description": "Layered lasagna with ricotta, spinach, and marinara sauce.",
-		"image": "./images/Vegetariansushi.jpg"
+		"image": "./images/Vegetablelasagna.jpg"
     },
     {
         "id": "31",
