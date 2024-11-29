@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Lista przepisów{% endblock %}
+
+{% block body %}
+    <style>
+        .recipe-list { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+        .recipe-item { margin-bottom: 2em; padding: 1em; border: 1px solid #ccc; border-radius: 5px; }
+        .recipe-item h2 { margin-top: 0; }
+        .recipe-item img { max-width: 100%; height: auto; }
+    </style>
+
+    <div class="recipe-list">
+        <h1>Lista przepisów</h1>
+
+        {% for recipe in recipes %}
+            <div class="recipe-item">
+                <h2>{{ recipe.name }}</h2>
+                <p><strong>Kuchnia:</strong> {{ recipe.cuisine }}</p>
+                <p><strong>Trudność:</strong> {{ recipe.difficulty }}</p>
+                <p><strong>Wegetariański:</strong> {{ recipe.isVegetarian ? 'Tak' : 'Nie' }}</p>
+                <p>{{ recipe.description }}</p>
+                {% if recipe.image %}
+                    <img src="{{ recipe.image }}" alt="{{ recipe.name }}">
+                {% endif %}
+            </div>
+        {% else %}
+            <p>Brak przepisów do wyświetlenia.</p>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Filtruj przepisy{% endblock %}
+
+{% block body %}
+    <h1>Filtruj przepisy</h1>
+
+    <form method="get" action="{{ path('recipe_filter') }}">
+        <label for="cuisine">Kuchnia:</label>
+        <input type="text" id="cuisine" name="cuisine">
+
+        <label for="difficulty">Trudność:</label>
+        <select id="difficulty" name="difficulty">
+            <option value="">Dowolna</option>
+            <option value="beginner">Początkujący</option>
+            <option value="intermediate">Średniozaawansowany</option>
+            <option value="advanced">Zaawansowany</option>
+        </select>
+
+        <label for="is_vegetarian">Wegetariański:</label>
+        <select id="is_vegetarian" name="is_vegetarian">
+            <option value="">Dowolny</option>
+            <option value="1">Tak</option>
+            <option value="0">Nie</option>
+        </select>
+
+        <button type="submit">Filtruj</button>
+    </form>
+
+    <h1>Wyniki filtrowania</h1>
+    <ul>
+        {% for recipe in recipes %}
+            <li>
+                <h2>{{ recipe.name }}</h2>
+                <p><strong>Kuchnia:</strong> {{ recipe.cuisine }}</p>
+                <p><strong>Trudność:</strong> {{ recipe.difficulty }}</p>
+                <p><strong>Wegetariański:</strong> {{ recipe.isVegetarian ? 'Tak' : 'Nie' }}</p>
+                <p><strong>Opis:</strong> {{ recipe.description }}</p>
+            </li>
+        {% else %}
+            <p>Brak przepisów spełniających kryteria.</p>
+        {% endfor %}
+    </ul>
+{% endblock %}
