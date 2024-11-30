@@ -2,43 +2,75 @@
 
 {% block title %}Filtruj przepisy{% endblock %}
 
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+    <!-- Link do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+{% endblock %}
+
 {% block body %}
-    <h1>Filtruj przepisy</h1>
+    <div class="container mt-4">
+        <h1 class="mb-4">Filtruj przepisy</h1>
 
-    <form method="get" action="{{ path('recipe_filter') }}">
-        <label for="cuisine">Kuchnia:</label>
-        <input type="text" id="cuisine" name="cuisine">
+        <!-- Formularz filtrujący -->
+        <form method="get" action="{{ path('recipe_filter') }}" class="row mb-4">
+            <div class="col-md-3 mb-3">
+                <label for="cuisine" class="form-label">Kuchnia:</label>
+                <select id="cuisine" name="cuisine" class="form-select">
+                    <option value="">All</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Mexican">Mexican</option>
+                    <option value="American">American</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Indian">Indian</option>
+                    <option value="Middle Eastern">Middle Eastern</option>
+                </select>
+            </div>
 
-        <label for="difficulty">Trudność:</label>
-        <select id="difficulty" name="difficulty">
-            <option value="">Dowolna</option>
-            <option value="beginner">Początkujący</option>
-            <option value="intermediate">Średniozaawansowany</option>
-            <option value="advanced">Zaawansowany</option>
-        </select>
+            <div class="col-md-3 mb-3">
+                <label for="difficulty" class="form-label">Trudność:</label>
+                <select id="difficulty" name="difficulty" class="form-select">
+                    <option value="">Dowolna</option>
+                    <option value="beginner">Początkujący</option>
+                    <option value="intermediate">Średniozaawansowany</option>
+                    <option value="advanced">Zaawansowany</option>
+                </select>
+            </div>
 
-        <label for="is_vegetarian">Wegetariański:</label>
-        <select id="is_vegetarian" name="is_vegetarian">
-            <option value="">Dowolny</option>
-            <option value="1">Tak</option>
-            <option value="0">Nie</option>
-        </select>
+            <div class="col-md-3 mb-3">
+                <label for="is_vegetarian" class="form-label">Wegetariański:</label>
+                <select id="is_vegetarian" name="is_vegetarian" class="form-select">
+                    <option value="">Dowolny</option>
+                    <option value="1">Tak</option>
+                    <option value="0">Nie</option>
+                </select>
+            </div>
 
-        <button type="submit">Filtruj</button>
-    </form>
+            <!-- Przycisk Filtruj obok pól -->
+            <div class="col-md-3 d-flex align-items-end mb-3">
+                <button type="submit" class="btn btn-primary w-100">Filtruj</button>
+            </div>
+        </form>
 
-    <h1>Wyniki filtrowania</h1>
-    <ul>
-        {% for recipe in recipes %}
-            <li>
-                <h2>{{ recipe.name }}</h2>
-                <p><strong>Kuchnia:</strong> {{ recipe.cuisine }}</p>
-                <p><strong>Trudność:</strong> {{ recipe.difficulty }}</p>
-                <p><strong>Wegetariański:</strong> {{ recipe.isVegetarian ? 'Tak' : 'Nie' }}</p>
-                <p><strong>Opis:</strong> {{ recipe.description }}</p>
-            </li>
-        {% else %}
-            <p>Brak przepisów spełniających kryteria.</p>
-        {% endfor %}
-    </ul>
+        <div class="container mt-4">
+            <h1 class="mb-4">Przepisy</h1>
+
+            <!-- Wyświetlanie przepisów -->
+            <div class="row">
+                {% for recipe in recipes %}
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="{{ recipe.image }}" alt="{{ recipe.name }}" class="card-img-top" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ recipe.name }}</h5>
+                                <p class="card-text">{{ recipe.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% else %}
+                    <p>Brak przepisów spełniających kryteria.</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 {% endblock %}
