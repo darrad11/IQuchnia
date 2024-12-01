@@ -38,10 +38,19 @@
             </form>
 
 
-            <!-- Linki do logowania -->
-            <a href="{{ path('recipe_list') }}" class="btn d-flex align-items-center">
-                <i class="bi bi-person-circle text-primary"></i> <!-- Ikona logowania -->
-            </a>
+            {% if app.user %}
+                <!-- Ikona wylogowania -->
+                <form action="{{ path('app_logout') }}" method="post" class="d-inline">
+                    <button type="submit" class="btn btn-link p-0 text-danger" style="border: none; background: none;">
+                        <i class="bi bi-box-arrow-right" style="font-size: 1.5rem;" title="Wyloguj"></i>
+                    </button>
+                </form>
+            {% else %}
+                <!-- Ikona logowania -->
+                <a href="{{ path('app_login') }}" class="btn btn-link p-0 text-primary">
+                    <i class="bi bi-box-arrow-in-right" style="font-size: 1.5rem;" title="Zaloguj"></i>
+                </a>
+            {% endif %}
 
         </div>
     </div>
