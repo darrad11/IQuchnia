@@ -17,13 +17,24 @@
             <div class="col-md-3 mb-3">
                 <label for="cuisine" class="form-label">Kuchnia:</label>
                 <select id="cuisine" name="cuisine" class="form-select">
-                    <option value="">All</option>
-                    <option value="Italian">Italian</option>
-                    <option value="Mexican">Mexican</option>
-                    <option value="American">American</option>
-                    <option value="Japanese">Japanese</option>
-                    <option value="Indian">Indian</option>
-                    <option value="Middle Eastern">Middle Eastern</option>
+                    <option value="">Dowolna</option>
+                    <option value="Amerykańska">Amerykańska</option>
+                    <option value="Bliskowschodnia">Bliskowschodnia</option>
+                    <option value="Brytyjska">Brytyjska</option>
+                    <option value="Chińska">Chińska</option>
+                    <option value="Francuska">Francuska</option>
+                    <option value="Grecka">Grecka</option>
+                    <option value="Hiszpańska">Hiszpańska</option>
+                    <option value="Indyjska">Indyjska</option>
+                    <option value="Japońska">Japońska</option>
+                    <option value="Meksykańska">Meksykańska</option>
+                    <option value="Niemiecka">Niemiecka</option>
+                    <option value="Śródziemnomorska">Śródziemnomorska</option>
+                    <option value="Tajska">Tajska</option>
+                    <option value="Włoska">Włoska</option>
+
+
+
                 </select>
             </div>
 
@@ -31,11 +42,13 @@
                 <label for="difficulty" class="form-label">Trudność:</label>
                 <select id="difficulty" name="difficulty" class="form-select">
                     <option value="">Dowolna</option>
-                    <option value="beginner">Początkujący</option>
-                    <option value="intermediate">Średniozaawansowany</option>
-                    <option value="advanced">Zaawansowany</option>
+                    <option value="początkujący">Początkujący</option>
+                    <option value="średniozaawansowany">Średniozaawansowany</option>
+                    <option value="zaawansowany">Zaawansowany</option>
+                    <option value="mistrzowski">Mistrzowski</option>
                 </select>
             </div>
+
 
             <div class="col-md-3 mb-3">
                 <label for="is_vegetarian" class="form-label">Wegetariański:</label>
@@ -51,6 +64,326 @@
                 <button type="submit" class="btn btn-primary w-100">Filtruj</button>
             </div>
         </form>
+        <form method="get" action="{{ path('recipe_filter') }}" class="row mb-4">
+            <div class="col-md-3 mb-3">
+                <label for="ingredient1" class="form-label">Składnik 1:</label>
+                <select id="ingredient1" name="ingredient1" class="form-select">
+                    <option value="">Dowolny</option>
+                    <option value="awokado">Awokado</option>
+                    <option value="bakłażan">Bakłażan</option>
+                    <option value="bazylia">Bazylia</option>
+                    <option value="bekon">Bekon</option>
+                    <option value="beszamel">Beszamel</option>
+                    <option value="biszkopty">Biszkopty</option>
+                    <option value="brokuły">Brokuły</option>
+                    <option value="bulion">Bulion</option>
+                    <option value="bułka tarta">Bułka tarta</option>
+                    <option value="cebula">Cebula</option>
+                    <option value="chili">Chili</option>
+                    <option value="chleb">Chleb</option>
+                    <option value="ciasto francuskie">Ciasto francuskie</option>
+                    <option value="ciasto na pizzę">Ciasto na pizzę</option>
+                    <option value="ciecierzyca">Ciecierzyca</option>
+                    <option value="cukier">Cukier</option>
+                    <option value="cukinia">Cukinia</option>
+                    <option value="curry">Curry</option>
+                    <option value="cynamon">Cynamon</option>
+                    <option value="cytryna">Cytryna</option>
+                    <option value="czosnek">Czosnek</option>
+                    <option value="falafel">Falafel</option>
+                    <option value="fasola">Fasola</option>
+                    <option value="grzanki">Grzanki</option>
+                    <option value="jabłka">Jabłka</option>
+                    <option value="jajka">Jajka</option>
+                    <option value="jogurt">Jogurt</option>
+                    <option value="kaczka">Kaczka</option>
+                    <option value="kakao">Kakao</option>
+                    <option value="kapusta">Kapusta</option>
+                    <option value="kawa">Kawa</option>
+                    <option value="kiełbaski">Kiełbaski</option>
+                    <option value="kolendra">Kolendra</option>
+                    <option value="komosa ryżowa">Komosa ryżowa</option>
+                    <option value="kotleciki jagnięce">Kotleciki jagnięce</option>
+                    <option value="krewetki">Krewetki</option>
+                    <option value="kurczak">Kurczak</option>
+                    <option value="makaron">Makaron</option>
+                    <option value="makaron fettuccine">Makaron fettuccine</option>
+                    <option value="makaron lasagne">Makaron lasagne</option>
+                    <option value="makaron ramen">Makaron ramen</option>
+                    <option value="makaron ryżowy">Makaron ryżowy</option>
+                    <option value="makaron ziti">Makaron ziti</option>
+                    <option value="marchewka">Marchewka</option>
+                    <option value="mascarpone">Mascarpone</option>
+                    <option value="masło">Masło</option>
+                    <option value="małże">Małże</option>
+                    <option value="mielona jagnięcina">Mielona jagnięcina</option>
+                    <option value="mielona wołowina">Mielona wołowina</option>
+                    <option value="mleko">Mleko</option>
+                    <option value="mleko kokosowe">Mleko kokosowe</option>
+                    <option value="mozzarella">Mozzarella</option>
+                    <option value="musztarda">Musztarda</option>
+                    <option value="mąka">Mąka</option>
+                    <option value="nori">Nori</option>
+                    <option value="ogórek">Ogórek</option>
+                    <option value="olej">Olej</option>
+                    <option value="oliwa">Oliwa</option>
+                    <option value="orzeszki ziemne">Orzeszki ziemne</option>
+                    <option value="owoce morza">Owoce morza</option>
+                    <option value="papryka">Papryka</option>
+                    <option value="parmezan">Parmezan</option>
+                    <option value="pieczarki">Pieczarki</option>
+                    <option value="pierś kurczaka">Pierś kurczaka</option>
+                    <option value="polędwica wołowa">Polędwica wołowa</option>
+                    <option value="pomidory">Pomidory</option>
+                    <option value="przyprawa tikka masala">Przyprawa tikka masala</option>
+                    <option value="ricotta">Ricotta</option>
+                    <option value="ryba">Ryba</option>
+                    <option value="ryż">Ryż</option>
+                    <option value="ryż do sushi">Ryż do sushi</option>
+                    <option value="salsa">Salsa</option>
+                    <option value="sałata">Sałata</option>
+                    <option value="sałata rzymska">Sałata rzymska</option>
+                    <option value="seler">Seler</option>
+                    <option value="ser cheddar">Ser Cheddar</option>
+                    <option value="ser mozzarella">Ser Mozzarella</option>
+                    <option value="ser pleśniowy">Ser Pleśniowy</option>
+                    <option value="sos Alfredo">Sos Alfredo</option>
+                    <option value="sos Cezar">Sos Cezar</option>
+                    <option value="sos hoisin">Sos Hoisin</option>
+                    <option value="sos marinara">Sos Marinara</option>
+                    <option value="sos pesto">Sos Pesto</option>
+                    <option value="sos pomidorowy">Sos Pomidorowy</option>
+                    <option value="sos sojowy">Sos Sojowy</option>
+                    <option value="sos tamaryndowy">Sos Tamaryndowy</option>
+                    <option value="syrop klonowy">Syrop Klonowy</option>
+                    <option value="szafran">Szafran</option>
+                    <option value="szpinak">Szpinak</option>
+                    <option value="tahini">Tahini</option>
+                    <option value="tortille">Tortille</option>
+                    <option value="warzywa">Warzywa</option>
+                    <option value="wieprzowina">Wieprzowina</option>
+                    <option value="wołowina">Wołowina</option>
+                    <option value="ziemniaki">Ziemniaki</option>
+                    <option value="zioła">Zioła</option>
+                    <option value="śmietana">Śmietana</option>
+                </select>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <label for="ingredient2" class="form-label">Składnik 2:</label>
+                <select id="ingredient2" name="ingredient2" class="form-select">
+                    <option value="">Dowolny</option>
+                    <option value="awokado">Awokado</option>
+                    <option value="bakłażan">Bakłażan</option>
+                    <option value="bazylia">Bazylia</option>
+                    <option value="bekon">Bekon</option>
+                    <option value="beszamel">Beszamel</option>
+                    <option value="biszkopty">Biszkopty</option>
+                    <option value="brokuły">Brokuły</option>
+                    <option value="bulion">Bulion</option>
+                    <option value="bułka tarta">Bułka tarta</option>
+                    <option value="cebula">Cebula</option>
+                    <option value="chili">Chili</option>
+                    <option value="chleb">Chleb</option>
+                    <option value="ciasto francuskie">Ciasto francuskie</option>
+                    <option value="ciasto na pizzę">Ciasto na pizzę</option>
+                    <option value="ciecierzyca">Ciecierzyca</option>
+                    <option value="cukier">Cukier</option>
+                    <option value="cukinia">Cukinia</option>
+                    <option value="curry">Curry</option>
+                    <option value="cynamon">Cynamon</option>
+                    <option value="cytryna">Cytryna</option>
+                    <option value="czosnek">Czosnek</option>
+                    <option value="falafel">Falafel</option>
+                    <option value="fasola">Fasola</option>
+                    <option value="grzanki">Grzanki</option>
+                    <option value="jabłka">Jabłka</option>
+                    <option value="jajka">Jajka</option>
+                    <option value="jogurt">Jogurt</option>
+                    <option value="kaczka">Kaczka</option>
+                    <option value="kakao">Kakao</option>
+                    <option value="kapusta">Kapusta</option>
+                    <option value="kawa">Kawa</option>
+                    <option value="kiełbaski">Kiełbaski</option>
+                    <option value="kolendra">Kolendra</option>
+                    <option value="komosa ryżowa">Komosa ryżowa</option>
+                    <option value="kotleciki jagnięce">Kotleciki jagnięce</option>
+                    <option value="krewetki">Krewetki</option>
+                    <option value="kurczak">Kurczak</option>
+                    <option value="makaron">Makaron</option>
+                    <option value="makaron fettuccine">Makaron fettuccine</option>
+                    <option value="makaron lasagne">Makaron lasagne</option>
+                    <option value="makaron ramen">Makaron ramen</option>
+                    <option value="makaron ryżowy">Makaron ryżowy</option>
+                    <option value="makaron ziti">Makaron ziti</option>
+                    <option value="marchewka">Marchewka</option>
+                    <option value="mascarpone">Mascarpone</option>
+                    <option value="masło">Masło</option>
+                    <option value="małże">Małże</option>
+                    <option value="mielona jagnięcina">Mielona jagnięcina</option>
+                    <option value="mielona wołowina">Mielona wołowina</option>
+                    <option value="mleko">Mleko</option>
+                    <option value="mleko kokosowe">Mleko kokosowe</option>
+                    <option value="mozzarella">Mozzarella</option>
+                    <option value="musztarda">Musztarda</option>
+                    <option value="mąka">Mąka</option>
+                    <option value="nori">Nori</option>
+                    <option value="ogórek">Ogórek</option>
+                    <option value="olej">Olej</option>
+                    <option value="oliwa">Oliwa</option>
+                    <option value="orzeszki ziemne">Orzeszki ziemne</option>
+                    <option value="owoce morza">Owoce morza</option>
+                    <option value="papryka">Papryka</option>
+                    <option value="parmezan">Parmezan</option>
+                    <option value="pieczarki">Pieczarki</option>
+                    <option value="pierś kurczaka">Pierś kurczaka</option>
+                    <option value="polędwica wołowa">Polędwica wołowa</option>
+                    <option value="pomidory">Pomidory</option>
+                    <option value="przyprawa tikka masala">Przyprawa tikka masala</option>
+                    <option value="ricotta">Ricotta</option>
+                    <option value="ryba">Ryba</option>
+                    <option value="ryż">Ryż</option>
+                    <option value="ryż do sushi">Ryż do sushi</option>
+                    <option value="salsa">Salsa</option>
+                    <option value="sałata">Sałata</option>
+                    <option value="sałata rzymska">Sałata rzymska</option>
+                    <option value="seler">Seler</option>
+                    <option value="ser cheddar">Ser Cheddar</option>
+                    <option value="ser mozzarella">Ser Mozzarella</option>
+                    <option value="ser pleśniowy">Ser Pleśniowy</option>
+                    <option value="sos Alfredo">Sos Alfredo</option>
+                    <option value="sos Cezar">Sos Cezar</option>
+                    <option value="sos hoisin">Sos Hoisin</option>
+                    <option value="sos marinara">Sos Marinara</option>
+                    <option value="sos pesto">Sos Pesto</option>
+                    <option value="sos pomidorowy">Sos Pomidorowy</option>
+                    <option value="sos sojowy">Sos Sojowy</option>
+                    <option value="sos tamaryndowy">Sos Tamaryndowy</option>
+                    <option value="syrop klonowy">Syrop Klonowy</option>
+                    <option value="szafran">Szafran</option>
+                    <option value="szpinak">Szpinak</option>
+                    <option value="tahini">Tahini</option>
+                    <option value="tortille">Tortille</option>
+                    <option value="warzywa">Warzywa</option>
+                    <option value="wieprzowina">Wieprzowina</option>
+                    <option value="wołowina">Wołowina</option>
+                    <option value="ziemniaki">Ziemniaki</option>
+                    <option value="zioła">Zioła</option>
+                    <option value="śmietana">Śmietana</option>
+                </select>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <label for="ingredient3" class="form-label">Składnik 3:</label>
+                <select id="ingredient3" name="ingredient3" class="form-select">
+                    <option value="">Dowolny</option>
+                    <option value="awokado">Awokado</option>
+                    <option value="bakłażan">Bakłażan</option>
+                    <option value="bazylia">Bazylia</option>
+                    <option value="bekon">Bekon</option>
+                    <option value="beszamel">Beszamel</option>
+                    <option value="biszkopty">Biszkopty</option>
+                    <option value="brokuły">Brokuły</option>
+                    <option value="bulion">Bulion</option>
+                    <option value="bułka tarta">Bułka tarta</option>
+                    <option value="cebula">Cebula</option>
+                    <option value="chili">Chili</option>
+                    <option value="chleb">Chleb</option>
+                    <option value="ciasto francuskie">Ciasto francuskie</option>
+                    <option value="ciasto na pizzę">Ciasto na pizzę</option>
+                    <option value="ciecierzyca">Ciecierzyca</option>
+                    <option value="cukier">Cukier</option>
+                    <option value="cukinia">Cukinia</option>
+                    <option value="curry">Curry</option>
+                    <option value="cynamon">Cynamon</option>
+                    <option value="cytryna">Cytryna</option>
+                    <option value="czosnek">Czosnek</option>
+                    <option value="falafel">Falafel</option>
+                    <option value="fasola">Fasola</option>
+                    <option value="grzanki">Grzanki</option>
+                    <option value="jabłka">Jabłka</option>
+                    <option value="jajka">Jajka</option>
+                    <option value="jogurt">Jogurt</option>
+                    <option value="kaczka">Kaczka</option>
+                    <option value="kakao">Kakao</option>
+                    <option value="kapusta">Kapusta</option>
+                    <option value="kawa">Kawa</option>
+                    <option value="kiełbaski">Kiełbaski</option>
+                    <option value="kolendra">Kolendra</option>
+                    <option value="komosa ryżowa">Komosa ryżowa</option>
+                    <option value="kotleciki jagnięce">Kotleciki jagnięce</option>
+                    <option value="krewetki">Krewetki</option>
+                    <option value="kurczak">Kurczak</option>
+                    <option value="makaron">Makaron</option>
+                    <option value="makaron fettuccine">Makaron fettuccine</option>
+                    <option value="makaron lasagne">Makaron lasagne</option>
+                    <option value="makaron ramen">Makaron ramen</option>
+                    <option value="makaron ryżowy">Makaron ryżowy</option>
+                    <option value="makaron ziti">Makaron ziti</option>
+                    <option value="marchewka">Marchewka</option>
+                    <option value="mascarpone">Mascarpone</option>
+                    <option value="masło">Masło</option>
+                    <option value="małże">Małże</option>
+                    <option value="mielona jagnięcina">Mielona jagnięcina</option>
+                    <option value="mielona wołowina">Mielona wołowina</option>
+                    <option value="mleko">Mleko</option>
+                    <option value="mleko kokosowe">Mleko kokosowe</option>
+                    <option value="mozzarella">Mozzarella</option>
+                    <option value="musztarda">Musztarda</option>
+                    <option value="mąka">Mąka</option>
+                    <option value="nori">Nori</option>
+                    <option value="ogórek">Ogórek</option>
+                    <option value="olej">Olej</option>
+                    <option value="oliwa">Oliwa</option>
+                    <option value="orzeszki ziemne">Orzeszki ziemne</option>
+                    <option value="owoce morza">Owoce morza</option>
+                    <option value="papryka">Papryka</option>
+                    <option value="parmezan">Parmezan</option>
+                    <option value="pieczarki">Pieczarki</option>
+                    <option value="pierś kurczaka">Pierś kurczaka</option>
+                    <option value="polędwica wołowa">Polędwica wołowa</option>
+                    <option value="pomidory">Pomidory</option>
+                    <option value="przyprawa tikka masala">Przyprawa tikka masala</option>
+                    <option value="ricotta">Ricotta</option>
+                    <option value="ryba">Ryba</option>
+                    <option value="ryż">Ryż</option>
+                    <option value="ryż do sushi">Ryż do sushi</option>
+                    <option value="salsa">Salsa</option>
+                    <option value="sałata">Sałata</option>
+                    <option value="sałata rzymska">Sałata rzymska</option>
+                    <option value="seler">Seler</option>
+                    <option value="ser cheddar">Ser Cheddar</option>
+                    <option value="ser mozzarella">Ser Mozzarella</option>
+                    <option value="ser pleśniowy">Ser Pleśniowy</option>
+                    <option value="sos Alfredo">Sos Alfredo</option>
+                    <option value="sos Cezar">Sos Cezar</option>
+                    <option value="sos hoisin">Sos Hoisin</option>
+                    <option value="sos marinara">Sos Marinara</option>
+                    <option value="sos pesto">Sos Pesto</option>
+                    <option value="sos pomidorowy">Sos Pomidorowy</option>
+                    <option value="sos sojowy">Sos Sojowy</option>
+                    <option value="sos tamaryndowy">Sos Tamaryndowy</option>
+                    <option value="syrop klonowy">Syrop Klonowy</option>
+                    <option value="szafran">Szafran</option>
+                    <option value="szpinak">Szpinak</option>
+                    <option value="tahini">Tahini</option>
+                    <option value="tortille">Tortille</option>
+                    <option value="warzywa">Warzywa</option>
+                    <option value="wieprzowina">Wieprzowina</option>
+                    <option value="wołowina">Wołowina</option>
+                    <option value="ziemniaki">Ziemniaki</option>
+                    <option value="zioła">Zioła</option>
+                    <option value="śmietana">Śmietana</option>
+                </select>
+            </div>
+
+            <!-- Przycisk Filtruj obok pól -->
+            <div class="col-md-3 d-flex align-items-end mb-3">
+                <button type="submit" class="btn btn-primary w-100">Filtruj</button>
+            </div>
+
+
+        </form>
 
         <div class="container mt-4">
             <h1 class="mb-4">Przepisy</h1>
@@ -64,6 +397,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ recipe.name }}</h5>
                                 <p class="card-text">{{ recipe.description }}</p>
+                                <p><strong>Składniki:</strong> {{ recipe.ingredients }}</p> <!-- Tak ma byc? -->
                             </div>
                         </div>
                     </div>

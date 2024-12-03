@@ -17,14 +17,14 @@ class RecipeRepository extends ServiceEntityRepository
     public function findBySearch(string $search): array
     {
         return $this->createQueryBuilder('r')
-            ->where('r.name LIKE :search OR r.description LIKE :search') // Wyszukiwanie po nazwie i opisie
+            ->where('r.name LIKE :search OR r.description LIKE :search OR r.ingredients LIKE :search') // Wyszukiwanie po nazwie i opisielub składnikach
             ->setParameter('search', '%' . $search . '%')
             ->getQuery()
             ->getResult();
     }
 
     // Metoda do filtrów (można ją już mieć)
-    public function findByFiltersAndSearch(array $criteria, ?string $search): array
+    public function findByFiltersAndSearch(array $criteria, ?string $search, ?string $ingredients = null): array
     {
         $qb = $this->createQueryBuilder('r');
 
@@ -44,9 +44,20 @@ class RecipeRepository extends ServiceEntityRepository
 
         // Dodajemy warunek wyszukiwania
         if ($search) {
-            $qb->andWhere('r.name LIKE :search OR r.description LIKE :search')
+            $qb->andWhere('r.name LIKE :search OR r.description LIKE :search OR r.ingredients LIKE :search')
                 ->setParameter('search', '%' . $search . '%');
         }
+        // Dodajemy warunki wyszukiwania po składnikach
+        if (!empty($criteria['ingredients'])) {
+            foreach ($criteria['ingredients'] as $index => $ingredient) {
+                if ($ingredient) {
+                    $qb->andWhere("r.ingredients LIKE :ingredient$index")
+                        ->setParameter("ingredient$index", '%' . $ingredient . '%');
+                }
+            }
+        }
+
+
 
         return $qb->getQuery()->getResult();
     }

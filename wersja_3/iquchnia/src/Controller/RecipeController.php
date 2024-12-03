@@ -40,12 +40,18 @@ class RecipeController extends AbstractController
             'difficulty' => $request->query->get('difficulty') ?: null,
             'is_vegetarian' => $request->query->get('is_vegetarian') ?: null,
         ];
+        // Dodanie składników do kryteriów
+        $criteria['ingredients'] = [
+            $request->query->get('ingredient1'),
+            $request->query->get('ingredient2'),
+            $request->query->get('ingredient3'),
+        ];
 
         // Pobranie frazy wyszukiwania
         $search = $request->query->get('search');
-
+        $ingredients = $request->query->get('ingredients'); // Dodanie składników do filtrów
         // Znalezienie przepisów na podstawie filtrów i wyszukiwania
-        $recipes = $recipeRepository->findByFiltersAndSearch($criteria, $search);
+        $recipes = $recipeRepository->findByFiltersAndSearch($criteria, $search, $ingredients);
 
         // Renderowanie szablonu z przepisami i frazą wyszukiwania
         return $this->render('recipe/filter.html.twig', [

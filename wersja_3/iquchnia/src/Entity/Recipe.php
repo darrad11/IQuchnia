@@ -40,6 +40,9 @@ class Recipe
     #[ORM\Column(type: Types::STRING, length: 255)]
     private ?string $description = null;
 
+    #[ORM\Column(type: Types::TEXT, nullable: true)]
+    private ?string $ingredients = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -137,6 +140,18 @@ class Recipe
     public function setDescription(string $description): static
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    public function getIngredients(): ?string // Getter dla składników
+    {
+        return $this->ingredients;
+    }
+
+    public function setIngredients(?string $ingredients): static // Setter dla składników
+    {
+        $this->ingredients = $ingredients;
 
         return $this;
     }
