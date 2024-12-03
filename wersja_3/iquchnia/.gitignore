@@ -1,0 +1,22 @@
+# Ignorowanie katalogu var
+/var/
+
+# Ignorowanie plików systemowych
+.DS_Store
+Thumbs.db
+
+# Ignorowanie plików IDE (np. PhpStorm, VSCode)
+.idea/
+.vscode/
+
+# Ignorowanie plików do testów PHPUnit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Ignorowanie plików konfiguracyjnych Symfony
+/.env.local
+/.env.*.local
+
+# Ignorowanie logów
+/var/log/
+/var/sessions/
