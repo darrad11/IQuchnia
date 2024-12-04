@@ -21,6 +21,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ recipe.name }}</h5>
                             <p class="card-text">{{ recipe.description }}</p>
+                            <p><strong>Składniki:</strong> {{ recipe.ingredients }}</p>
                             <!-- Dodajemy link do strony szczegółów przepisu -->
                             <a href="{{ path('recipe_detail', {'id': recipe.id}) }}" class="btn btn-primary">Zobacz szczegóły</a>
                         </div>
