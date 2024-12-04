@@ -160,6 +160,11 @@ class __TwigTemplate_7ddc9e03993de84df6a8adcfc550f9c9 extends Template
             // line 24
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["recipe"], "ingredients", [], "any", false, false, false, 24), "html", null, true);
             yield "</p>
+                            <!-- Dodajemy link do strony szczegółów przepisu -->
+                            <a href=\"";
+            // line 26
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("recipe_detail", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["recipe"], "id", [], "any", false, false, false, 26)]), "html", null, true);
+            yield "\" class=\"btn btn-primary\">Zobacz szczegóły</a>
                         </div>
                     </div>
                 </div>
@@ -167,14 +172,14 @@ class __TwigTemplate_7ddc9e03993de84df6a8adcfc550f9c9 extends Template
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 29
+            // line 31
             yield "                <p>Brak przepisów spełniających kryteria.</p>
             ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_key'], $context['recipe'], $context['_parent'], $context['_iterated']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 31
+        // line 33
         yield "        </div>
     </div>
 ";
@@ -208,7 +213,7 @@ class __TwigTemplate_7ddc9e03993de84df6a8adcfc550f9c9 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  178 => 31,  171 => 29,  161 => 24,  157 => 23,  153 => 22,  146 => 20,  142 => 18,  137 => 17,  130 => 12,  117 => 11,  101 => 6,  88 => 5,  65 => 3,  42 => 1,);
+        return array (  183 => 33,  176 => 31,  166 => 26,  161 => 24,  157 => 23,  153 => 22,  146 => 20,  142 => 18,  137 => 17,  130 => 12,  117 => 11,  101 => 6,  88 => 5,  65 => 3,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -237,6 +242,8 @@ class __TwigTemplate_7ddc9e03993de84df6a8adcfc550f9c9 extends Template
                             <h5 class=\"card-title\">{{ recipe.name }}</h5>
                             <p class=\"card-text\">{{ recipe.description }}</p>
                             <p><strong>Składniki:</strong> {{ recipe.ingredients }}</p>
+                            <!-- Dodajemy link do strony szczegółów przepisu -->
+                            <a href=\"{{ path('recipe_detail', {'id': recipe.id}) }}\" class=\"btn btn-primary\">Zobacz szczegóły</a>
                         </div>
                     </div>
                 </div>
@@ -245,6 +252,7 @@ class __TwigTemplate_7ddc9e03993de84df6a8adcfc550f9c9 extends Template
             {% endfor %}
         </div>
     </div>
-{% endblock %}", "recipe/index.html.twig", "E:\\DariaR\\IQuchnia\\wersja_3\\iquchnia\\templates\\recipe\\index.html.twig");
+{% endblock %}
+", "recipe/index.html.twig", "E:\\DariaR\\IQuchnia\\wersja_3\\iquchnia\\templates\\recipe\\index.html.twig");
     }
 }

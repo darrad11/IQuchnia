@@ -10,36 +10,34 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class RecipeController extends AbstractController
 {
+    // Trasa dla listy przepisów
     #[Route('/recipes', name: 'recipe_list')]
     public function list(Request $request, RecipeRepository $recipeRepository): Response
     {
-        // Pobranie frazy wyszukiwania z zapytania GET
         $search = $request->query->get('search');
 
-        // Jeśli fraza wyszukiwania jest obecna, przeszukaj przepisy
         if ($search) {
             $recipes = $recipeRepository->findBySearch($search);
         } else {
-            // Jeśli brak frazy, pobierz wszystkie przepisy
             $recipes = $recipeRepository->findAll();
         }
 
-        // Przekazujemy przepisy oraz frazę wyszukiwania do widoku
         return $this->render('recipe/index.html.twig', [
             'recipes' => $recipes,
-            'search' => $search,  // Wartość frazy wyszukiwania
+            'search' => $search,
         ]);
     }
 
+    // Trasa dla filtracji przepisów
     #[Route('/filter', name: 'recipe_filter')]
     public function filter(Request $request, RecipeRepository $recipeRepository): Response
     {
-        // Odczytanie parametrów z zapytania GET
         $criteria = [
             'cuisine' => $request->query->get('cuisine') ?: null,
             'difficulty' => $request->query->get('difficulty') ?: null,
             'is_vegetarian' => $request->query->get('is_vegetarian') ?: null,
         ];
+
         // Dodanie składników do kryteriów
         $criteria['ingredients'] = [
             $request->query->get('ingredient1'),
@@ -47,17 +45,33 @@ class RecipeController extends AbstractController
             $request->query->get('ingredient3'),
         ];
 
-        // Pobranie frazy wyszukiwania
         $search = $request->query->get('search');
+
         $ingredients = $request->query->get('ingredients'); // Dodanie składników do filtrów
         // Znalezienie przepisów na podstawie filtrów i wyszukiwania
         $recipes = $recipeRepository->findByFiltersAndSearch($criteria, $search, $ingredients);
 
-        // Renderowanie szablonu z przepisami i frazą wyszukiwania
         return $this->render('recipe/filter.html.twig', [
             'recipes' => $recipes,
-            'search' => $search,  // Wartość wyszukiwania
+            'search' => $search,
         ]);
     }
 
+    // Trasa dla szczegółów przepisu
+    #[Route('/recipes/{id}', name: 'recipe_detail')]
+    public function detail(int $id, RecipeRepository $recipeRepository): Response
+    {
+        // Pobierz przepis z bazy danych na podstawie ID
+        $recipe = $recipeRepository->find($id);
+
+        // Jeśli przepis nie istnieje, wyświetl błąd
+        if (!$recipe) {
+            throw $this->createNotFoundException('Recipe not found');
+        }
+
+        // Renderowanie widoku z detalami przepisu
+        return $this->render('recipe/detail.html.twig', [
+            'recipe' => $recipe,
+        ]);
+    } 
 }

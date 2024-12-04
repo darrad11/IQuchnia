@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\RecipeRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: RecipeRepository::class)]
 class Recipe
@@ -27,7 +28,7 @@ class Recipe
     #[Assert\Choice(choices: ['beginner', 'intermediate', 'advanced', 'masterchef'], message: 'Choose a valid difficulty level.')]
     private ?string $difficulty = null;
 
-    #[ORM\Column]
+    #[ORM\Column(type: "boolean")]
     private ?bool $is_vegetarian = null;
 
     #[ORM\ManyToOne(targetEntity: User::class, inversedBy: 'recipes')]
@@ -100,11 +101,11 @@ class Recipe
     {
         return $this->is_vegetarian;
     }
-
+    
     public function setVegetarian(bool $is_vegetarian): static
     {
         $this->is_vegetarian = $is_vegetarian;
-
+    
         return $this;
     }
 

@@ -139,22 +139,20 @@ class __TwigTemplate_25582a3b4ba3fba4f84accf6a6bb69cc extends Template
                 <label for=\"cuisine\" class=\"form-label\">Kuchnia:</label>
                 <select id=\"cuisine\" name=\"cuisine\" class=\"form-select\">
                     <option value=\"\">Dowolna</option>
-                    <option value=\"Włoska\">Włoska</option>
-                    <option value=\"Meksykańska\">Meksykańska</option>
                     <option value=\"Amerykańska\">Amerykańska</option>
-                    <option value=\"Japońska\">Japońska</option>
-                    <option value=\"Indyjska\">Indyjska</option>
                     <option value=\"Bliskowschodnia\">Bliskowschodnia</option>
+                    <option value=\"Brytyjska\">Brytyjska</option>
+                    <option value=\"Chińska\">Chińska</option>
+                    <option value=\"Francuska\">Francuska</option>
+                    <option value=\"Grecka\">Grecka</option>
+                    <option value=\"Hiszpańska\">Hiszpańska</option>
+                    <option value=\"Indyjska\">Indyjska</option>
+                    <option value=\"Japońska\">Japońska</option>
+                    <option value=\"Meksykańska\">Meksykańska</option>
+                    <option value=\"Niemiecka\">Niemiecka</option>
                     <option value=\"Śródziemnomorska\">Śródziemnomorska</option>
                     <option value=\"Tajska\">Tajska</option>
-                    <option value=\"Niemiecka\">Niemiecka</option>
-                    <option value=\"Hiszpańska\">Hiszpańska</option>
-                    <option value=\"Brytyjska\">Brytyjska</option>
-                    <option value=\"Francuska\">Francuska</option>
-                    <option value=\"Chińska\">Chińska</option>
-                    <option value=\"Grecka\">Grecka</option>
-
-
+                    <option value=\"Włoska\">Włoska</option>
                 </select>
             </div>
 
@@ -168,7 +166,6 @@ class __TwigTemplate_25582a3b4ba3fba4f84accf6a6bb69cc extends Template
                     <option value=\"mistrzowski\">Mistrzowski</option>
                 </select>
             </div>
-
 
             <div class=\"col-md-3 mb-3\">
                 <label for=\"is_vegetarian\" class=\"form-label\">Wegetariański:</label>
@@ -184,8 +181,9 @@ class __TwigTemplate_25582a3b4ba3fba4f84accf6a6bb69cc extends Template
                 <button type=\"submit\" class=\"btn btn-primary w-100\">Filtruj</button>
             </div>
         </form>
+
         <form method=\"get\" action=\"";
-        // line 66
+        // line 64
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("recipe_filter");
         yield "\" class=\"row mb-4\">
             <div class=\"col-md-3 mb-3\">
@@ -505,7 +503,6 @@ class __TwigTemplate_25582a3b4ba3fba4f84accf6a6bb69cc extends Template
                 <button type=\"submit\" class=\"btn btn-primary w-100\">Filtruj</button>
             </div>
 
-
         </form>
 
         <div class=\"container mt-4\">
@@ -514,33 +511,37 @@ class __TwigTemplate_25582a3b4ba3fba4f84accf6a6bb69cc extends Template
             <!-- Wyświetlanie przepisów -->
             <div class=\"row\">
                 ";
-        // line 392
+        // line 389
         $context['_parent'] = $context;
-        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["recipes"]) || array_key_exists("recipes", $context) ? $context["recipes"] : (function () { throw new RuntimeError('Variable "recipes" does not exist.', 392, $this->source); })()));
+        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["recipes"]) || array_key_exists("recipes", $context) ? $context["recipes"] : (function () { throw new RuntimeError('Variable "recipes" does not exist.', 389, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["recipe"]) {
-            // line 393
+            // line 390
             yield "                    <div class=\"col-md-4 mb-4\">
                         <div class=\"card\">
                             <img src=\"";
-            // line 395
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["recipe"], "image", [], "any", false, false, false, 395), "html", null, true);
+            // line 392
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["recipe"], "image", [], "any", false, false, false, 392), "html", null, true);
             yield "\" alt=\"";
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["recipe"], "name", [], "any", false, false, false, 395), "html", null, true);
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["recipe"], "name", [], "any", false, false, false, 392), "html", null, true);
             yield "\" class=\"card-img-top\" style=\"height: 200px; object-fit: cover;\">
                             <div class=\"card-body\">
                                 <h5 class=\"card-title\">";
-            // line 397
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["recipe"], "name", [], "any", false, false, false, 397), "html", null, true);
+            // line 394
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["recipe"], "name", [], "any", false, false, false, 394), "html", null, true);
             yield "</h5>
                                 <p class=\"card-text\">";
-            // line 398
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["recipe"], "description", [], "any", false, false, false, 398), "html", null, true);
+            // line 395
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["recipe"], "description", [], "any", false, false, false, 395), "html", null, true);
             yield "</p>
                                 <p><strong>Składniki:</strong> ";
-            // line 399
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["recipe"], "ingredients", [], "any", false, false, false, 399), "html", null, true);
+            // line 396
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["recipe"], "ingredients", [], "any", false, false, false, 396), "html", null, true);
             yield "</p> <!-- Tak ma byc? -->
+                                <a href=\"";
+            // line 397
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("recipe_detail", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["recipe"], "id", [], "any", false, false, false, 397)]), "html", null, true);
+            yield "\" class=\"btn btn-primary\">Zobacz szczegóły</a>
                             </div>
                         </div>
                     </div>
@@ -548,14 +549,14 @@ class __TwigTemplate_25582a3b4ba3fba4f84accf6a6bb69cc extends Template
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 404
+            // line 402
             yield "                    <p>Brak przepisów spełniających kryteria.</p>
                 ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_key'], $context['recipe'], $context['_parent'], $context['_iterated']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 406
+        // line 404
         yield "            </div>
         </div>
     </div>
@@ -590,7 +591,7 @@ class __TwigTemplate_25582a3b4ba3fba4f84accf6a6bb69cc extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  559 => 406,  552 => 404,  542 => 399,  538 => 398,  534 => 397,  527 => 395,  523 => 393,  518 => 392,  189 => 66,  136 => 16,  130 => 12,  117 => 11,  101 => 6,  88 => 5,  65 => 3,  42 => 1,);
+        return array (  560 => 404,  553 => 402,  543 => 397,  539 => 396,  535 => 395,  531 => 394,  524 => 392,  520 => 390,  515 => 389,  187 => 64,  136 => 16,  130 => 12,  117 => 11,  101 => 6,  88 => 5,  65 => 3,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -615,22 +616,20 @@ class __TwigTemplate_25582a3b4ba3fba4f84accf6a6bb69cc extends Template
                 <label for=\"cuisine\" class=\"form-label\">Kuchnia:</label>
                 <select id=\"cuisine\" name=\"cuisine\" class=\"form-select\">
                     <option value=\"\">Dowolna</option>
-                    <option value=\"Włoska\">Włoska</option>
-                    <option value=\"Meksykańska\">Meksykańska</option>
                     <option value=\"Amerykańska\">Amerykańska</option>
-                    <option value=\"Japońska\">Japońska</option>
-                    <option value=\"Indyjska\">Indyjska</option>
                     <option value=\"Bliskowschodnia\">Bliskowschodnia</option>
+                    <option value=\"Brytyjska\">Brytyjska</option>
+                    <option value=\"Chińska\">Chińska</option>
+                    <option value=\"Francuska\">Francuska</option>
+                    <option value=\"Grecka\">Grecka</option>
+                    <option value=\"Hiszpańska\">Hiszpańska</option>
+                    <option value=\"Indyjska\">Indyjska</option>
+                    <option value=\"Japońska\">Japońska</option>
+                    <option value=\"Meksykańska\">Meksykańska</option>
+                    <option value=\"Niemiecka\">Niemiecka</option>
                     <option value=\"Śródziemnomorska\">Śródziemnomorska</option>
                     <option value=\"Tajska\">Tajska</option>
-                    <option value=\"Niemiecka\">Niemiecka</option>
-                    <option value=\"Hiszpańska\">Hiszpańska</option>
-                    <option value=\"Brytyjska\">Brytyjska</option>
-                    <option value=\"Francuska\">Francuska</option>
-                    <option value=\"Chińska\">Chińska</option>
-                    <option value=\"Grecka\">Grecka</option>
-
-
+                    <option value=\"Włoska\">Włoska</option>
                 </select>
             </div>
 
@@ -644,7 +643,6 @@ class __TwigTemplate_25582a3b4ba3fba4f84accf6a6bb69cc extends Template
                     <option value=\"mistrzowski\">Mistrzowski</option>
                 </select>
             </div>
-
 
             <div class=\"col-md-3 mb-3\">
                 <label for=\"is_vegetarian\" class=\"form-label\">Wegetariański:</label>
@@ -660,6 +658,7 @@ class __TwigTemplate_25582a3b4ba3fba4f84accf6a6bb69cc extends Template
                 <button type=\"submit\" class=\"btn btn-primary w-100\">Filtruj</button>
             </div>
         </form>
+
         <form method=\"get\" action=\"{{ path('recipe_filter') }}\" class=\"row mb-4\">
             <div class=\"col-md-3 mb-3\">
                 <label for=\"ingredient1\" class=\"form-label\">Składnik 1:</label>
@@ -978,7 +977,6 @@ class __TwigTemplate_25582a3b4ba3fba4f84accf6a6bb69cc extends Template
                 <button type=\"submit\" class=\"btn btn-primary w-100\">Filtruj</button>
             </div>
 
-
         </form>
 
         <div class=\"container mt-4\">
@@ -994,6 +992,7 @@ class __TwigTemplate_25582a3b4ba3fba4f84accf6a6bb69cc extends Template
                                 <h5 class=\"card-title\">{{ recipe.name }}</h5>
                                 <p class=\"card-text\">{{ recipe.description }}</p>
                                 <p><strong>Składniki:</strong> {{ recipe.ingredients }}</p> <!-- Tak ma byc? -->
+                                <a href=\"{{ path('recipe_detail', {'id': recipe.id}) }}\" class=\"btn btn-primary\">Zobacz szczegóły</a>
                             </div>
                         </div>
                     </div>

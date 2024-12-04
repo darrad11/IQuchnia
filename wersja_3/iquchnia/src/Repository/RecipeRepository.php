@@ -37,8 +37,9 @@ class RecipeRepository extends ServiceEntityRepository
             $qb->andWhere('r.difficulty = :difficulty')
                 ->setParameter('difficulty', $criteria['difficulty']);
         }
+    // Filtrowanie według 'is_vegetarian' (jeśli podano)
         if ($criteria['is_vegetarian'] !== null) {
-            $qb->andWhere('r.isVegetarian = :is_vegetarian')
+            $qb->andWhere('r.is_vegetarian = :is_vegetarian')
                 ->setParameter('is_vegetarian', $criteria['is_vegetarian']);
         }
 
