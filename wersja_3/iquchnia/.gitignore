@@ -1,6 +1,3 @@
-# Ignorowanie katalogu var
-/var/
-
 # Ignorowanie plików systemowych
 .DS_Store
 Thumbs.db
