@@ -2,7 +2,10 @@
 
 namespace App\Controller;
 
+use App\Entity\Recipe;
+use App\Form\RecipeType;
 use App\Repository\RecipeRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -46,8 +49,8 @@ class RecipeController extends AbstractController
         ];
 
         $search = $request->query->get('search');
-
         $ingredients = $request->query->get('ingredients'); // Dodanie składników do filtrów
+
         // Znalezienie przepisów na podstawie filtrów i wyszukiwania
         $recipes = $recipeRepository->findByFiltersAndSearch($criteria, $search, $ingredients);
 
@@ -74,4 +77,60 @@ class RecipeController extends AbstractController
             'recipe' => $recipe,
         ]);
     } 
+
+    // Trasa dla dodawania nowego przepisu
+    #[Route('/recipe/new', name: 'recipe_new')]
+    public function new(Request $request, EntityManagerInterface $entityManager): Response
+    {
+        $recipe = new Recipe();
+        $form = $this->createForm(RecipeType::class, $recipe);
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            // Obsługa przesyłania zdjęcia
+            $imageFile = $form->get('image')->getData();
+            if ($imageFile) {
+                // Wygenerowanie unikalnej nazwy pliku
+                $newFilename = uniqid() . '.' . $imageFile->guessExtension();
+
+                try {
+                    // Przenieś zdjęcie do folderu ./images/
+                    $imageFile->move(
+                        $this->getParameter('images_directory'), // Pobranie ścieżki z konfiguracji
+                        $newFilename
+                    );
+
+                    // Ustawienie ścieżki do obrazu w encji
+                    $recipe->setImage('images/' . $newFilename);
+                } catch (\Exception $e) {
+                    $this->addFlash('error', 'Wystąpił błąd podczas przesyłania zdjęcia.');
+                    return $this->render('recipe/new.html.twig', [
+                        'form' => $form->createView(),
+                    ]);
+                }
+            }
+            $ingredients = $form->get('ingredients')->getData();
+            if ($ingredients) {
+                $recipe->setIngredients($ingredients);
+            }
+
+            // Dodaj użytkownika (opcjonalnie, jeśli system logowania jest używany)
+            if ($this->getUser()) {
+                $recipe->setUser($this->getUser());
+            }
+
+            // Zapisz przepis w bazie danych
+            $entityManager->persist($recipe);
+            $entityManager->flush();
+
+            $this->addFlash('success', 'Przepis został dodany!');
+
+            return $this->redirectToRoute('recipe_list');
+        }
+
+        return $this->render('recipe/new.html.twig', [
+            'form' => $form->createView(),
+        ]);
+    }
 }

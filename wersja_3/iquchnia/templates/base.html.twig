@@ -28,6 +28,10 @@
             Filtruj
         </a>
 
+        {% if app.user and (is_granted('ROLE_USER') or is_granted('ROLE_ADMIN')) %}
+                <a class="ms-3 h5 mb-0 text-decoration-none text-dark" href="{{ path('recipe_new') }}">Dodaj przepis</a>
+        {% endif %}
+
         <div class="d-flex ms-auto"> <!-- ms-auto dodaje margines do lewej, co pcha elementy na prawo -->
             <!-- Pasek wyszukiwania -->
             <form action="{{ app.request.uri }}" method="get" class="d-flex me-3">

@@ -102,12 +102,12 @@ class Recipe
         return $this->is_vegetarian;
     }
     
-    public function setVegetarian(bool $is_vegetarian): static
+    public function setIsVegetarian(bool $is_vegetarian): static
     {
         $this->is_vegetarian = $is_vegetarian;
     
         return $this;
-    }
+    }    
 
     public function getUser(): ?User
     {
